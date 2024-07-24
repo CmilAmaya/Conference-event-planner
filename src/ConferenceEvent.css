@@ -270,13 +270,12 @@
   .left_navbar{
     width: 60vw;
     display: flex;
-    gap: 180px;
+    gap: 18px;
   
   }
   .nav_links a {
     text-decoration: none;
     color: white;
-    margin-right: 20px;
     transition: all 0.3s ease;
     font-size: 25px;
   }
@@ -299,6 +298,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-left: 10px;
     /* background-color: transparent; */
   }
   

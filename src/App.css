@@ -4,8 +4,15 @@
   box-sizing: border-box;
 }
 
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .first_page {
   display: flex;
+  width: 100vw;
   height: 100vh;
   background-image: url("https://cdn.pixabay.com/photo/2018/07/05/14/45/conference-3518465_1280.jpg");
   background-size: cover;
@@ -13,9 +20,8 @@
   justify-content: center;
   align-items: center;
   color: white;
-  overflow: hidden; 
+  position: relative;
   background-color: rgb(185, 186, 187);
-  /* position: relative; */
 }
 
 .first_page::before {
@@ -26,6 +32,7 @@
   width: 100%;
   height: 100%;
   backdrop-filter: blur(10px);
+  z-index: 0;
 }
 
 .first_page h1 {
@@ -35,7 +42,6 @@
 
 .get-started-btn {
   background-color:#EFC16B;
-  /* color: white; */
   color: black;
   border: none;
   padding: 20px 40px;
@@ -67,8 +73,6 @@
 .aboutus_main {
   width: 800px;
   color: white;
-  /* background-color: rgba(0,0,0,0.1); */
-
 }
 
 .aboutus_container {
@@ -77,13 +81,12 @@
   flex-direction: column;
   gap: 30px;
   text-align: justify;
+  padding-right: 50px;
 }
 
 .aboutus_container p {
   font-size: 23px;
   font-weight: 700;
-  
-
 }
 
 .first_page_name_btn {
@@ -109,7 +112,7 @@
   overflow-x: hidden;
   top: 100vh;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.8);
   transition: top 0.5s ease;
