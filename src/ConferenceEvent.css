@@ -1,4 +1,9 @@
-/* Venue selection styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+  font-family: Nunito;
+}
+
 .venue_container {
     text-align: center;
     display: flex;
@@ -36,7 +41,7 @@
   .text h1{
     width: 900px;
     font-size: 40px;
-    background-color: #133b6a;
+    background-color: #0E0B16;
     color: white;
     width:990px;
     height: 70px;
@@ -188,8 +193,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #5291D9;
-    color: black;
+    background-color: #4117F6;
+    color: white;
     border: none;
     width: 10px;
     height: 30px;
@@ -197,11 +202,11 @@
     cursor: pointer;
   }
   .btn-warning {
-    background-color: #52D7D9;
+    background-color: #c18aff;
    display: flex;
    align-items: center;
    justify-content: center;
-    color: black;
+    color: white;
     width: 10px;
     height: 30px;
     border: none;
@@ -248,21 +253,27 @@
   .table_item_data tbody tr:first-child:hover {
     background-color: transparent;
   }
+
   navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
-    background-color:#133b6a;
+    background-color:#0E0B16;
     color: white;
     width: 100vw;
   }
   
-  .company_logo {
+  .company_logo a {
     font-size: 30px;
-    color: #EFC16B;
+    color: #A239CA;
     font-weight: 700;
   }
+  
+  .company_logo a:hover {
+    color: white;
+  }
+
   .nav_links{
     display: flex;
     gap: 170px;
@@ -291,8 +302,8 @@
   }
   .details_button {
     padding: 8px 16px;
-    background-color: #EFC16B;
-    color: black;
+    background-color: #A239CA;
+    color: white;
     /* border: 1px solid white; */
     font-size: 20px;
     border-radius: 5px;
@@ -319,7 +330,7 @@
         justify-content: center;
         align-items: center;
         padding: 20px 20px;
-        background-color: #133b6a;
+        background-color: #0E0B16;
         color: white;
         width: 100vw;
     }

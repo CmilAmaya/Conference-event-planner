@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import "./ConferenceEvent.css";
 import TotalCost from "./TotalCost";
@@ -155,7 +156,9 @@ const ConferenceEvent = () => {
     return (
         <>
             <navbar className="navbar_event_conference">
-                <div className="company_logo">Conference Expense Planner</div>
+                <div className="company_logo">
+                  <a href="/Conference-event-planner/AboutUs">Conference Expense Planner</a>
+                </div>
                 <div className="left_navbar">
                     <div className="nav_links">
                         <a href="#venue" onClick={() => navigateToProducts("#venue")} >Venue</a>
@@ -291,11 +294,9 @@ const ConferenceEvent = () => {
                                             <div className="meal_cost">${item.cost}</div>
                                         </div>
                                     ))}
-                                    <div className="total_cost">Total Cost: {mealsTotalCost}</div>
+                                    
                                 </div>
-                                <div className="total_cost">Total Cost: </div>
-
-
+                                <div className="total_cost">Total Cost: {mealsTotalCost} </div>
                             </div>
                         </div>
                     ) : (
